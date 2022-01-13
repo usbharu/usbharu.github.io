@@ -4,50 +4,57 @@
   }
 }
 
-@media (prefers-color-scheme: dark){
-  body{
-    background: darkslategray;
-    color: wheat;
-  }
-  .link-list a{
-    background: darkolivegreen;
-    color: wheat;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body{
-    background: wheat;
-    color: black;
-  }
-  .link-list a{
-    background: orange;
-    color: black;
-  }
-}
 
 .icon {
-border-radius: 50%;
-border: solid 4px orangered;
-width: 50%;
+  border-radius: 50%;
+  border: solid 4px orangered;
+  width: 50%;
 }
 
 
 body {
   text-align: center;
   position: relative;
+  background: wheat;
+  color: black;
 }
 
-.link-list{
+.link-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.link-list a{
+.link-list a {
   display: inline-block;
   margin: 5px 10px;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 4px;
+  background: orange;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: darkslategray;
+    color: wheat;
+  }
+
+  .link-list a {
+    background: darkolivegreen;
+    color: wheat;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: wheat;
+    color: black;
+  }
+
+  .link-list a {
+    background: orange;
+    color: black;
+  }
 }
