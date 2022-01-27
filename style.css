@@ -1,16 +1,26 @@
+
+
+.warp{}
+
 @media screen and (min-width: 671px) {
   .icon {
     max-width: 150px;
   }
 }
 
-
-.icon {
+.icon{
+  width: 50%;
+  height: auto;
   border-radius: 50%;
   border: solid 4px orangered;
-  width: 50%;
 }
 
+.icon :before{
+  content: '';
+  display: block;
+  padding-top: 50%;
+
+}
 
 body {
   text-align: center;
@@ -35,6 +45,11 @@ body {
   color: black;
 }
 
+.link-list a:hover{
+background: darkolivegreen;
+  color: wheat;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: darkslategray;
@@ -44,6 +59,11 @@ body {
   .link-list a {
     background: darkolivegreen;
     color: wheat;
+  }
+
+  .link-list a:hover{
+    background: wheat;
+    color: darkolivegreen;
   }
 }
 
@@ -56,5 +76,10 @@ body {
   .link-list a {
     background: orange;
     color: black;
+  }
+
+  .link-list a:hover{
+    background: darkolivegreen;
+    color: wheat;
   }
 }
